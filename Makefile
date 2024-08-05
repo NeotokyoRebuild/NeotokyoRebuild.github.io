@@ -3,17 +3,22 @@ SITE_TITLE := Neotokyo; Rebuild
 
 SRC_DIR := src
 DST_DIR := _out
-SRCS := $(shell find $(SRC_DIR) -name '*.md')
+SRCS := $(shell find $(SRC_DIR) -name '*.md' | grep -vxF "src/index.md")
 SRCS_CPY := $(SRC_DIR)/style.css
 
-BLOG_LIST_FILE := $(DST_DIR)/blog_list
+BLOG_LIST_FILE := _metadata/blog_list
 DSTS_HTML := $(SRCS:$(SRC_DIR)/%.md=$(DST_DIR)/%.html)
 DSTS_HTML_CPY := $(SRCS_CPY:$(SRC_DIR)/%=$(DST_DIR)/%)
 
 all: html
 
+startup:
+	mkdir -p _out
+	mkdir -p _metadata
+
 clean:
 	rm -fr $(DST_DIR)
+	rm -fr _metadata
 
 serve:
 	python3 -m http.server -d $(DST_DIR)
@@ -36,23 +41,25 @@ $(DST_DIR)/%: $(SRC_DIR)/%
 	@mkdir -p $(dir $@)
 	@cp $< $@
 
-$(DST_DIR)/blog/index.html: $(SRC_DIR)/blog/*/*.md $(SRC_DIR)/_header.html $(SRC_DIR)/_footer.html
+$(DST_DIR)/index.html: $(SRC_DIR)/blog/*/*.md $(SRC_DIR)/_header.html $(SRC_DIR)/_footer.html
 	@echo "html (blog):" $@
-	@echo "<h1>Blog</h1><ul>" > $@.mid
 	@mv $(BLOG_LIST_FILE) $(BLOG_LIST_FILE).tmp
 	@cat $(BLOG_LIST_FILE).tmp | sort -ur > $(BLOG_LIST_FILE)
 	@rm $(BLOG_LIST_FILE).tmp
+	@SSG_TITLE=$$(lowdown -X title $<); \
+		m4 -DSSG_TITLE="$$SSG_TITLE" $(SRC_DIR)/_header.html > $@.header.html.tmp
+	@lowdown -Thtml -o $@.tmp < $(SRC_DIR)/index.md
+	@echo "<ul>" >> $@.mid
 	@cat $(BLOG_LIST_FILE) | while read line; do \
 		entry_date=$$(echo "$$line" | cut -f1); \
 		title=$$(echo "$$line" | cut -f2); \
-		echo "<li><a href=\"$$entry_date\">$$entry_date - $$title</a></li>"; \
+		echo "<li><a href=\"/blog/$$entry_date\">$$entry_date - $$title</a></li>"; \
 		done >> $@.mid
 	@echo "</ul>" >> $@.mid
-	@m4 -DSSG_TITLE="Blog" $(SRC_DIR)/_header.html > $@.header
-	@cat $@.header $@.mid $(SRC_DIR)/_footer.html > $@
-	@rm $@.header $@.mid
+	@cat $@.header.html.tmp $@.tmp $@.mid $(SRC_DIR)/_footer.html > $@
+	@rm $@.tmp $@.header.html.tmp $@.mid
 
-$(DST_DIR)/blog/atom.xml: $(SRC_DIR)/blog/*/*.md
+$(DST_DIR)/atom.xml: $(SRC_DIR)/blog/*/*.md
 	@echo "html (atom):" $@
 	@echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > $@
 	@echo "<feed xmlns=\"http://www.w3.org/2005/Atom\">" >> $@
@@ -60,8 +67,8 @@ $(DST_DIR)/blog/atom.xml: $(SRC_DIR)/blog/*/*.md
 	@echo "<updated>$$(head -n1 "$(BLOG_LIST_FILE)" | cut -f1)T00:00:00Z</updated>" >> $@
 	@echo "<id>$(SITE_HTTPS_URL)blog/</id>" >> $@
 	@echo "<author><name>$(SITE_TITLE)</name></author>" >> $@
-	@echo "<link rel=\"alternate\" type=\"text/html\" href=\"$(SITE_HTTPS_URL)blog/\"/>" >> $@
-	@echo "<link rel=\"self\" type=\"application/atom+xml\" href=\"$(SITE_HTTPS_URL)blog/atom.xml\"/>" >> $@
+	@echo "<link rel=\"alternate\" type=\"text/html\" href=\"$(SITE_HTTPS_URL)\"/>" >> $@
+	@echo "<link rel=\"self\" type=\"application/atom+xml\" href=\"$(SITE_HTTPS_URL)atom.xml\"/>" >> $@
 	@cat $(BLOG_LIST_FILE) | while read line; do \
 		entry_date=$$(echo "$$line" | cut -f1); \
 		title=$$(echo "$$line" | cut -f2); \
@@ -77,7 +84,7 @@ $(DST_DIR)/blog/atom.xml: $(SRC_DIR)/blog/*/*.md
 		done >> $@
 	@echo "</feed>" >> $@
 
-html: $(DSTS_HTML) $(DSTS_HTML_CPY) #$(DST_DIR)/blog/index.html $(DST_DIR)/blog/atom.xml
+html: startup $(DSTS_HTML) $(DSTS_HTML_CPY) $(DST_DIR)/index.html $(DST_DIR)/atom.xml
 
 .PHONY: all clean html
 
