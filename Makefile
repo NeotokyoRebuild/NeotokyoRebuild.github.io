@@ -46,8 +46,7 @@ $(DST_DIR)/index.html: $(SRC_DIR)/blog/*/*.md $(SRC_DIR)/_header.html $(SRC_DIR)
 	@mv $(BLOG_LIST_FILE) $(BLOG_LIST_FILE).tmp
 	@cat $(BLOG_LIST_FILE).tmp | sort -ur > $(BLOG_LIST_FILE)
 	@rm $(BLOG_LIST_FILE).tmp
-	@SSG_TITLE=$$(lowdown -X title $<); \
-		m4 -DSSG_TITLE="$$SSG_TITLE" $(SRC_DIR)/_header.html > $@.header.html.tmp
+	@m4 -DSSG_TITLE="Home" $(SRC_DIR)/_header.html > $@.header.html.tmp
 	@lowdown -Thtml -o $@.tmp < $(SRC_DIR)/index.md
 	@echo "<ul>" >> $@.mid
 	@cat $(BLOG_LIST_FILE) | while read line; do \
