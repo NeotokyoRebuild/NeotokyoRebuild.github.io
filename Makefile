@@ -4,7 +4,7 @@ SITE_TITLE := Neotokyo; Rebuild
 SRC_DIR := src
 DST_DIR := _out
 SRCS := $(shell find $(SRC_DIR) -name '*.md' | grep -vxF "src/index.md")
-SRCS_CPY := $(SRC_DIR)/style.css
+SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico
 
 BLOG_LIST_FILE := _metadata/blog_list
 DSTS_HTML := $(SRCS:$(SRC_DIR)/%.md=$(DST_DIR)/%.html)
