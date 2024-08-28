@@ -74,7 +74,7 @@ location. Open up "Properties..." then launch options and set to your
 custom install path:
 
 ```
--neopath C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\
+-neopath "C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\"
 ```
 
 #### Linux
