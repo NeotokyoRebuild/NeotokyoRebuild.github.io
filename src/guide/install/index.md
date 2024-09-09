@@ -82,9 +82,9 @@ custom install path:
 `-neopath` doesn't work properly on Linux, just make sure the original
 assets is in one of the following paths (from the order of path priority):
 
-1. ~/.steam/steam/steamapps/common/NEOTOKYO/NeotokyoSource/
-2. ~/.local/share/neotokyo/NeotokyoSource/
-3. /usr/share/neotokyo/NeotokyoSource/
+1. `~/.steam/steam/steamapps/common/NEOTOKYO/NeotokyoSource/`
+2. `~/.local/share/neotokyo/NeotokyoSource/`
+3. `/usr/share/neotokyo/NeotokyoSource/`
 
 ### Linux - Force SteamRT 3.0
 
