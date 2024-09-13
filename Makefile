@@ -7,6 +7,7 @@ SRCS := $(shell find $(SRC_DIR) -name '*.md' | grep -vxF "src/index.md")
 SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico
 
 BLOG_LIST_FILE := _metadata/blog_list
+BLOG_DATES := _metadata/blog_dates
 DSTS_HTML := $(SRCS:$(SRC_DIR)/%.md=$(DST_DIR)/%.html)
 DSTS_HTML_CPY := $(SRCS_CPY:$(SRC_DIR)/%=$(DST_DIR)/%)
 
@@ -83,7 +84,12 @@ $(DST_DIR)/atom.xml: $(SRC_DIR)/blog/*/*.md
 		done >> $@
 	@echo "</feed>" >> $@
 
-html: startup $(DSTS_HTML) $(DSTS_HTML_CPY) $(DST_DIR)/index.html $(DST_DIR)/atom.xml
+news_txt:
+	@echo "_out/news.txt"
+	@cat $(BLOG_LIST_FILE) | cut -f1 > $(BLOG_DATES)
+	@paste $(BLOG_DATES) $(BLOG_LIST_FILE) | sed -e 's/^/\/blog\//' > "$(DST_DIR)/news.txt"
+
+html: startup $(DSTS_HTML) $(DSTS_HTML_CPY) $(DST_DIR)/index.html $(DST_DIR)/atom.xml news_txt
 
 .PHONY: all clean html
 
