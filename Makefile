@@ -4,7 +4,7 @@ SITE_TITLE := Neotokyo; Rebuild
 SRC_DIR := src
 DST_DIR := _out
 SRCS := $(shell find $(SRC_DIR) -name '*.md' | grep -vxF "src/index.md")
-SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico
+SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico $(shell find $(SRC_DIR) -name '*.png')
 
 BLOG_LIST_FILE := _metadata/blog_list
 BLOG_DATES := _metadata/blog_dates
@@ -36,6 +36,13 @@ $(DST_DIR)/%.html: $(SRC_DIR)/%.md $(SRC_DIR)/_header.html $(SRC_DIR)/_footer.ht
 		entry_date=$$(dir $< | cut -d'/' -f3); \
 		echo "$$entry_date	$$(lowdown -X title $<)" >> $(BLOG_LIST_FILE);; \
 		esac
+
+$(DST_DIR)/%.png: $(SRC_DIR)/%.png
+	@echo "html (copy)" $@
+	@mkdir -p $(dir $@)
+	@cp $< $@
+	@magick $@ -resize 200x200 $@_thumb.png
+	@echo "html (thumb)" $@_thumb.png
 
 $(DST_DIR)/%: $(SRC_DIR)/%
 	@echo "html (copy):" $@
