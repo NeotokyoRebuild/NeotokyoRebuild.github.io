@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2024-08-26
+Last Updated: 2024-09-14
 
 ## Operating System Requirement
 
@@ -25,23 +25,17 @@ Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID
 
 ## Downloading NT;RE
 
-Go into [Releases page](https://github.com/NeotokyoRebuild/neo/releases)
-of the NT;RE GitHub repository and pick the highest versioned release
-(EX: v7.1).
-There's also a release that's generally will be on top called "Latest Build"
-however this is just builds straight from the master branch which typically
-won't be used for playtests.
+For Pre-alpha v8.0, click on the following links to download the zip files:
 
-Click on the "Assets" dropdown and should see a list of files available to
-download. There's only two files needed for play NT;RE:
+* Windows and Linux: [neo-20240914-b2291c5-resources.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-resources.zip)
+* Windows-only: [neo-20240914-b2291c5-libraries-Windows-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-libraries-Windows-Release.zip)
+* Linux-only: [neo-20240914-b2291c5-libraries-Linux-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-libraries-Linux-Release.zip)
 
-* `neo-YYYYMMDD-GITHASH-resources.zip`
-    * EX: `neo-20240803-273dbf3-resources.zip`
-* `neo-YYYYMMDD-GITHASH-libraries-[Windows/Linux]-Release.zip`
-    * EX: `neo-20240803-273dbf3-libraries-Windows-Release.zip`
-
-The rest can be ignored as `debuginfo` is for developers to debug crash dumps
-and `dedicated` is for servers.
+For other versions, go to the [GitHub release](https://github.com/NeotokyoRebuild/neo/releases/) page and find the
+version you want and expand the "Assets" section. You only need to install a zip file that ends with
+`resources.zip` and for Windows: `libraries-Windows-Release.zip` or Linux: `libraries-Linux-Release.zip` for
+the binaries zip file themselves. Usually those three zip files will be located at the bottom of the list above
+the source code. The rest can be ignored as they're for developers or server operators.
 
 ## Installing NT;RE
 
