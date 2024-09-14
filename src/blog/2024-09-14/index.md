@@ -3,7 +3,7 @@ summary: Release note for Neotokyo; Rebuild Pre-Alpha v8.0
 author: nullsystem
 
 # Pre-Alpha v8.0 Release Note
-2024-09-14 nullsystem (Proof-read by Rainyan and brysondev)
+2024-09-14 nullsystem (Proof-read by Rainyan, brysondev, and xedmain)
 
 * [Builds download + changelog](https://github.com/NeotokyoRebuild/neo/releases/tag/v8.0-prealpha)
 
@@ -53,7 +53,7 @@ accumulation is kept throughout a match/map and resets on the next match/map. Th
 Multiple fixes went in, just a quick rundown:
 
 * SourceTV maxplayers fixed
-    * Server should no longer report 33 max players for a 32 player server. This was due to the SourceTV bot being added during server startup.
+    * Servers were able to have 33-34 max players, which was unintended and caused bugs. This has been fixed.
 * Removed dismemberment thresholds
 * Corrected HUD damage indicators
 * Ghosts/capzones fixes
