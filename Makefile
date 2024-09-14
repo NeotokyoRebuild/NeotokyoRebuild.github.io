@@ -41,7 +41,7 @@ $(DST_DIR)/%.png: $(SRC_DIR)/%.png
 	@echo "html (copy)" $@
 	@mkdir -p $(dir $@)
 	@cp $< $@
-	@magick $@ -resize 200x200 $@_thumb.png
+	@convert $@ -resize 200x200 $@_thumb.png
 	@echo "html (thumb)" $@_thumb.png
 
 $(DST_DIR)/%: $(SRC_DIR)/%
