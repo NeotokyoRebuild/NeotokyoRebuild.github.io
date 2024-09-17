@@ -96,3 +96,8 @@ When NT;RE is launched, a Window with options should popup. On the top
 "Container runtime" option change from "None" to "sniper 0.YYYYMMDD.VERSION"
 then click "Run". This will popup everytime NT;RE is started through Steam.
 
+### Could not load library client. Try restarting. If that doesn't work, verify the cache.
+
+#### Windows
+
+Double check the contents of your installation folder, you probably did not extract folders/files properly or are missing some all together. Make sure you have downloaded the necessary libraries and resource files from the "Assets" section of the latest release.
