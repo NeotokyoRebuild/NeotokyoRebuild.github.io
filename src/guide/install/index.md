@@ -100,4 +100,6 @@ then click "Run". This will popup everytime NT;RE is started through Steam.
 
 #### Windows
 
-Double check the contents of your installation folder, you probably did not extract folders/files properly or are missing some all together. Make sure you have downloaded the necessary libraries and resource files from the "Assets" section of the latest release.
+[Double check the contents](#installing-ntre) of your installation folder, you probably did not extract folders/files properly or are missing some all together. Make sure you have downloaded the necessary libraries and resource files from the "Assets" section of the latest release. Down below is an image of how your installation folder should look like:
+
+![Picture of the installation folder](folderstructure.png)
