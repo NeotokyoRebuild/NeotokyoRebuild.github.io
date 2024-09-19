@@ -61,8 +61,6 @@ standard setups. However if you have issues...
 
 ### Cannot mount original NEOTOKYO assets
 
-#### Windows
-
 This could happen if you have NEOTOKYO/Steam installed at a non-default 
 location. Open up "Properties..." then launch options and set to your 
 custom install path:
@@ -70,15 +68,6 @@ custom install path:
 ```
 -neopath "C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\"
 ```
-
-#### Linux
-
-`-neopath` doesn't work properly on Linux, just make sure the original
-assets is in one of the following paths (from the order of path priority):
-
-1. `~/.steam/steam/steamapps/common/NEOTOKYO/NeotokyoSource/`
-2. `~/.local/share/neotokyo/NeotokyoSource/`
-3. `/usr/share/neotokyo/NeotokyoSource/`
 
 ### Linux - Force SteamRT 3.0
 
