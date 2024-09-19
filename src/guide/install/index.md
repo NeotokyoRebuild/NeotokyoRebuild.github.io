@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2024-09-14
+Last Updated: 2024-09-19
 
 ## Operating System Requirement
 
@@ -25,11 +25,11 @@ Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID
 
 ## Downloading NT;RE
 
-For Pre-alpha v8.0, click on the following links to download the zip files:
+For Pre-alpha v8.1, click on the following links to download the zip files:
 
-* Windows and Linux: [neo-20240914-b2291c5-resources.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-resources.zip)
-* Windows-only: [neo-20240914-b2291c5-libraries-Windows-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-libraries-Windows-Release.zip)
-* Linux-only: [neo-20240914-b2291c5-libraries-Linux-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-libraries-Linux-Release.zip)
+* Windows and Linux: [neo-20240919-9e83cc3-resources.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.1-prealpha/neo-20240919-9e83cc3-resources.zip)
+* Windows-only: [neo-20240919-9e83cc3-libraries-Windows-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.1-prealpha/neo-20240919-9e83cc3-libraries-Windows-Release.zip)
+* Linux-only: [neo-20240919-9e83cc3-libraries-Linux-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.1-prealpha/neo-20240919-9e83cc3-libraries-Linux-Release.zip)
 
 For other versions, go to the [GitHub release](https://github.com/NeotokyoRebuild/neo/releases/) page and find the
 version you want and expand the "Assets" section. You only need to install a zip file that ends with
