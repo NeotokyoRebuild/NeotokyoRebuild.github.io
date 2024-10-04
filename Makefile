@@ -86,6 +86,9 @@ $(DST_DIR)/atom.xml: $(SRC_DIR)/blog/*/*.md
 		echo "<updated>$${entry_date}T00:00:00Z</updated>"; \
 		echo "<published>$${entry_date}T00:00:00Z</published>"; \
 		echo "<summary>$$(lowdown -X summary $(SRC_DIR)/blog/$${entry_date}/index.md)</summary>"; \
+		echo "<content type=\"html\">"; \
+		lowdown -Thtml "$(SRC_DIR)/blog/$${entry_date}/index.md" | sed "s/</\&lt;/g" | sed "s/>/\&gt;/g"; \
+		echo "</content>"; \
 		echo "<id>$$entry_url</id>"; \
 		echo "</entry>"; \
 		done >> $@
