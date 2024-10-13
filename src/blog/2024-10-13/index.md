@@ -3,7 +3,7 @@ summary: Release note for Neotokyo; Rebuild Pre-Alpha v9.0
 author: nullsystem
 
 # Pre-Alpha v9.0 Release Note
-2024-10-13 nullsystem (Proof-read by AdamTadeusz, brysondev, xedmain)
+2024-10-13 nullsystem (Proof-read by AdamTadeusz, brysondev, and xedmain)
 
 * [Download v9.0-prealpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v9.0-prealpha)
 * [Install NT;RE (client)](/guide/install/)
@@ -11,23 +11,23 @@ author: nullsystem
 
 ## Known issue
 
-* Player collision has been broken in v9.0-prealpha due to attemping enemy-only collision, wait for v9.1-prealpha release for the fix
+* Player collision has been broken in v9.0-prealpha due to attempting enemy-only collision, wait for v9.1-prealpha release for the fix
 
 ## New features
 
 ### VIP and TDM gamemodes
 VIP mode turns CTG capture points into VIP escape points and a random person is selected as a VIP.
-A VIP objective is to escape to the escape points while teammates tries to protect the
-VIP. The enemy instantly wins the round if the VIP gets killed. The VIP has a different player model, stats,
+The VIP's objective is to escape by reaching the objective, while teammates tries to protect them.
+The enemy instantly wins the round if the VIP is killed. The VIP has a different player model, stats,
 and its own set of available loadouts including exclusive access to the SMAC.
 
-TDM mode turns off both CTG capture points and ghosts, but enables respawning, and round time is extended to 10.25m.
+TDM mode turns off both CTG capture points & ghosts, and enables respawning. The round time is extended to 10.25m.
 
 The new convars for these settings are as follows:
 
 * `neo_vote_game_mode` - 1 by default, Vote on game mode to play. TDM=0, CTG=1, VIP=2
 * `neo_vip_eligible` - 1 by default, change to 0 to disable chance of being picked as VIP
-* `sv_neo_vip_ctg_on_death` - 0 by default, Spawn Ghost when VIP dies, continue the game
+* `sv_neo_vip_ctg_on_death` - 0 by default, Ghost spawns when VIP dies, continue the game as if it were CTG
 * `sv_neo_change_game_type_mid_round` - 1 by default, Allow game type change mid-match
 * `neo_tdm_round_timelimit` - 10.25 by default, TDM round timelimit, in minutes
 * `neo_ctg_round_timelimit` - 3.25 by default, CTG round timelimit, in minutes
@@ -36,7 +36,7 @@ The new convars for these settings are as follows:
 ### Custom crosshair
 You can now easily customize your crosshair. Inside options there is now a new tab called "Crosshair" and from here
 you can pick between a textured or custom crosshair.
-All crosshairs' color can be changed, with the custom crosshair having further settings typical of crosshair customization.
+All crosshair colors can be changed, with the custom crosshair having further settings typical of crosshair customization.
 There is also the ability to import and export custom crosshair files (uses the `neoxhr` file extension) for ease of sharing.
 
 The new convars for these settings are as follows:
@@ -100,7 +100,7 @@ Using the `+attack2` keybind (default `x`), can toggle between player outlines/i
 * Integrate Tony Sergi's fixes for the model animations
 * Stop camera from falling on initial team selection
 * Give knife attack some force
-* Fixed weapon stealing on teleporting spawns (EX: elevator spawns)
+* Fixed weapon stealing on teleporting spawns (EX: elevator spawns on `nt_snowfall_ctg`)
 
 ## Main menu fixes/changes
 
