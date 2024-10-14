@@ -14,7 +14,7 @@ The state of rebuild is looking great. Most of the parity with the current game 
 
 ## How can I try the game?
 
-You can try the game any time! We have a guide for installing the game - [guide for installing the game](/guide/install)
+You can try the game any time! We have a [guide for installing the game](/guide/install).
 
 
 ## Can I contribute?
