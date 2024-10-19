@@ -25,11 +25,18 @@ Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID
 
 ## Downloading NT;RE
 
-For Pre-alpha v9.0, click on the following links to download the zip files:
+Click on the following links to download the zip files:
 
-* Windows and Linux: [neo-20241012-bc3a767-resources.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v9.0-prealpha/neo-20241012-bc3a767-resources.zip)
-* Windows-only: [neo-20241012-bc3a767-libraries-Windows-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v9.0-prealpha/neo-20241012-bc3a767-libraries-Windows-Release.zip)
-* Linux-only: [neo-20241012-bc3a767-libraries-Linux-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v9.0-prealpha/neo-20241012-bc3a767-libraries-Linux-Release.zip)
+<div id="downloading-ntre-div">
+    <noscript>
+        <p>Sorry, Javascript is required to generate the download links.</p>
+        <p>
+            If you don't want to enable Javascript, see the download links manually from:
+            <a href="https://github.com/NeotokyoRebuild/neo/releases">https://github.com/NeotokyoRebuild/neo/releases</a>
+        </p>
+    </noscript>
+    <script type="text/javascript" src="/releases.js"></script>
+</div>
 
 For other versions, go to the [GitHub release](https://github.com/NeotokyoRebuild/neo/releases/) page and find the
 version you want and expand the "Assets" section. You only need to install a zip file that ends with
