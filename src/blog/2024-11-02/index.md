@@ -13,7 +13,7 @@ author: brysondev
 
 ### Deathmatch
 
-Deathmatch is the free-for-all equivalent to TDM with both CTG capture points & ghosts disabled, and enables respawning. Win by achieving 50 XP or after the timer runs out (10.25 minutes)
+Deathmatch is the free-for-all equivalent to TDM with both CTG capture points & ghost disabled, and enables respawning. Win by achieving 50 XP or after the timer runs out (10.25 minutes)
 
 The new ConVars for these settings are as follows:
 
