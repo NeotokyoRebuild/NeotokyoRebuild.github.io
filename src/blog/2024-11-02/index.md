@@ -109,6 +109,6 @@ Players now have the option to enable viewmodel only leaning. This prevents a ro
         * `neo_sv_pausematch_unpauseimmediate` - 0 by default, locked by cheat flag, unpause command is immediate.
 * Removed startup intro video
 * Gamemode enforcement by default is now changed to by map. Singular/random/by vote also implemented.
-    * Added `neo_sv_gamemode_enforcement` - Default = 0 (map - neo_game_config), determine gamemode by... 0 = map (neo_game_config), 1 = neo_sv_gamemode_single, 2 = Random within neo_sv_gamemode_random_allow, 3 = vote (neo_vote_game_mode in idle/warmup)
+    * Added `neo_sv_gamemode_enforcement` - Default = 0 (map - `neo_game_config`), determine gamemode by... 0 = map (`neo_game_config`), 1 = `neo_sv_gamemode_single`, 2 = Random within `neo_sv_gamemode_random_allow`, 3 = vote (`neo_vote_game_mode` in idle/warmup)
     * Added `neo_sv_gamemode_single` - The single game mode to enforce
     * Added `neo_sv_gamemode_random_allow` - The bitwise of game modes that is allowed to be used for the randomizer
