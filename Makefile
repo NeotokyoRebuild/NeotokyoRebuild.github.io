@@ -4,7 +4,7 @@ SITE_TITLE := Neotokyo; Rebuild
 SRC_DIR := src
 DST_DIR := _out
 SRCS := $(shell find $(SRC_DIR) -name '*.md' | grep -vxF "src/index.md")
-SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico $(shell find $(SRC_DIR) -name '*.png')
+SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico $(shell find $(SRC_DIR) -name '*.png') $(SRC_DIR)/releases.js
 
 BLOG_LIST_FILE := _metadata/blog_list
 BLOG_DATES := _metadata/blog_dates
@@ -29,7 +29,7 @@ $(DST_DIR)/%.html: $(SRC_DIR)/%.md $(SRC_DIR)/_header.html $(SRC_DIR)/_footer.ht
 	@mkdir -p $(dir $@)
 	@SSG_TITLE=$$(lowdown -X title $<); \
 		m4 -DSSG_TITLE="$$SSG_TITLE" $(SRC_DIR)/_header.html > $@.header.html.tmp
-	@lowdown -Thtml -o $@.tmp $< 
+	@lowdown -Thtml --html-no-skiphtml --html-no-escapehtml -o $@.tmp $< 
 	@cat $@.header.html.tmp $@.tmp $(SRC_DIR)/_footer.html > $@
 	@rm $@.tmp $@.header.html.tmp
 	@case $< in $(SRC_DIR)/blog/*) \
@@ -55,7 +55,7 @@ $(DST_DIR)/index.html: $(SRC_DIR)/blog/*/*.md $(SRC_DIR)/_header.html $(SRC_DIR)
 	@cat $(BLOG_LIST_FILE).tmp | sort -ur > $(BLOG_LIST_FILE)
 	@rm $(BLOG_LIST_FILE).tmp
 	@m4 -DSSG_TITLE="Home" $(SRC_DIR)/_header.html > $@.header.html.tmp
-	@lowdown -Thtml -o $@.tmp < $(SRC_DIR)/index.md
+	@lowdown -Thtml --html-no-skiphtml --html-no-escapehtml -o $@.tmp < $(SRC_DIR)/index.md
 	@echo "<ul>" >> $@.mid
 	@cat $(BLOG_LIST_FILE) | while read line; do \
 		entry_date=$$(echo "$$line" | cut -f1); \
@@ -86,6 +86,9 @@ $(DST_DIR)/atom.xml: $(SRC_DIR)/blog/*/*.md
 		echo "<updated>$${entry_date}T00:00:00Z</updated>"; \
 		echo "<published>$${entry_date}T00:00:00Z</published>"; \
 		echo "<summary>$$(lowdown -X summary $(SRC_DIR)/blog/$${entry_date}/index.md)</summary>"; \
+		echo "<content type=\"html\">"; \
+		lowdown -Thtml "$(SRC_DIR)/blog/$${entry_date}/index.md" | sed "s/</\&lt;/g" | sed "s/>/\&gt;/g"; \
+		echo "</content>"; \
 		echo "<id>$$entry_url</id>"; \
 		echo "</entry>"; \
 		done >> $@

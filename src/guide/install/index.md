@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2024-09-14
+Last Updated: 2024-10-13
 
 ## Operating System Requirement
 
@@ -25,11 +25,18 @@ Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID
 
 ## Downloading NT;RE
 
-For Pre-alpha v8.0, click on the following links to download the zip files:
+Click on the following links to download the zip files:
 
-* Windows and Linux: [neo-20240914-b2291c5-resources.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-resources.zip)
-* Windows-only: [neo-20240914-b2291c5-libraries-Windows-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-libraries-Windows-Release.zip)
-* Linux-only: [neo-20240914-b2291c5-libraries-Linux-Release.zip](https://github.com/NeotokyoRebuild/neo/releases/download/v8.0-prealpha/neo-20240914-b2291c5-libraries-Linux-Release.zip)
+<div id="downloading-ntre-div">
+    <noscript>
+        <p>Sorry, Javascript is required to generate the download links.</p>
+        <p>
+            If you don't want to enable Javascript, see the download links manually from:
+            <a href="https://github.com/NeotokyoRebuild/neo/releases">https://github.com/NeotokyoRebuild/neo/releases</a>
+        </p>
+    </noscript>
+    <script type="text/javascript" src="/releases.js"></script>
+</div>
 
 For other versions, go to the [GitHub release](https://github.com/NeotokyoRebuild/neo/releases/) page and find the
 version you want and expand the "Assets" section. You only need to install a zip file that ends with
@@ -61,8 +68,6 @@ standard setups. However if you have issues...
 
 ### Cannot mount original NEOTOKYO assets
 
-#### Windows
-
 This could happen if you have NEOTOKYO/Steam installed at a non-default 
 location. Open up "Properties..." then launch options and set to your 
 custom install path:
@@ -70,15 +75,6 @@ custom install path:
 ```
 -neopath "C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\"
 ```
-
-#### Linux
-
-`-neopath` doesn't work properly on Linux, just make sure the original
-assets is in one of the following paths (from the order of path priority):
-
-1. `~/.steam/steam/steamapps/common/NEOTOKYO/NeotokyoSource/`
-2. `~/.local/share/neotokyo/NeotokyoSource/`
-3. `/usr/share/neotokyo/NeotokyoSource/`
 
 ### Linux - Force SteamRT 3.0
 
