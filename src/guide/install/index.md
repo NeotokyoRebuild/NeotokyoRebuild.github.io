@@ -76,6 +76,16 @@ custom install path:
 -neopath "C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\"
 ```
 
+### Linux - Cannot join VAC servers
+
+Linux loads up in insecure mode by default, which will get blocked by
+servers running VAC. To get VAC loading, open up "Properties..." then
+launch options and (this is not a typo) set:
+
+```
+-steam -steam
+```
+
 ### Linux - Force SteamRT 3.0
 
 This is not required, however if you want to make NT;RE run under the
@@ -112,8 +122,8 @@ causing the game to not start. To workaround this, go to the Source SDK 2013 Mul
 Then make a backup of `engine.so` and use [execstack](https://linux.die.net/man/8/execstack) on it:
 
 ```
-cp engine.so engine.so.bak
-execstack -c engine.so
+$ cp engine.so engine.so.bak
+$ execstack -c engine.so
 ```
 
 NT;RE should be able to load up normally afterward.
