@@ -61,5 +61,5 @@ Players now have the option to enable automatic leaning. This prevents the use o
 * Fixed the map preview camera position height
 * Fixed the [game_score](https://developer.valvesoftware.com/wiki/Game_score) entity to function like how it does in OGNT 
 * Changed the scope color to the correct color for scoped weapons 
-* Added neo_bloom_controller for backwards compatibility with older maps
+* Added neo\_bloom\_controller for backwards compatibility with older maps
 * Fixed the FOV and viewmodel offset of the unsilenced MPN
