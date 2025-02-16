@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2025-02-13
+Last Updated: 2025-02-16
 
 ## Operating System Requirement
 
@@ -119,7 +119,16 @@ causing the game to not start. To workaround this, go to the Source SDK 2013 Mul
 ~/.steam/steam/steamapps/common/Source SDK Base 2013 Multiplayer/bin
 ```
 
-Then make a backup of `engine.so` and use [execstack](https://linux.die.net/man/8/execstack) on it:
+Then make a backup of `engine.so` and use either:
+
+[patchelf](https://github.com/NixOS/patchelf):
+
+```
+$ cp engine.so engine.so.bak
+$ patchelf --clear-execstack engine.so
+```
+
+Or [execstack](https://linux.die.net/man/8/execstack):
 
 ```
 $ cp engine.so engine.so.bak
