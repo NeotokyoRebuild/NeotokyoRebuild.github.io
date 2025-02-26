@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2025-02-16
+Last Updated: 2025-02-26
 
 ## Operating System Requirement
 
@@ -76,14 +76,14 @@ custom install path:
 -neopath "C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\"
 ```
 
-### Linux - Cannot join VAC servers
+### Cannot join VAC servers
 
-Linux loads up in insecure mode by default, which will get blocked by
+The client loads up in insecure mode by default, which will get blocked by
 servers running VAC. To get VAC loading, open up "Properties..." then
-launch options and (this is not a typo) set:
+launch options and set:
 
 ```
--steam -steam
+-steam
 ```
 
 ### Linux - Force SteamRT 3.0
