@@ -26,10 +26,10 @@ span#social-mobile {
 
 @media(max-width: 500px) {
   span#social {
-	display: none;
+    display: none;
   }
   span#social-mobile {
-	display: inline;
+    display: inline;
   }
 }
 
