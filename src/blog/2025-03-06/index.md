@@ -1,5 +1,5 @@
 title: Alpha v13.0 Release Note
-summary: Release note for Neotokyo; Rebuild Pre-Alpha v13.0
+summary: Release note for Neotokyo; Rebuild Alpha v13.0
 author: brysondev
 
 # Alpha v13.0 Release Note
