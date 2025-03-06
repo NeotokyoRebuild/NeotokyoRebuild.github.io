@@ -2,7 +2,7 @@ title: Alpha v13.0 Release Note
 summary: Release note for Neotokyo; Rebuild Pre-Alpha v13.0
 author: brysondev
 
-# Pre-Alpha v13.0 Release Note
+# Alpha v13.0 Release Note
 2025-03-06 brysondev
 
 * [Download v13.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v13.0-alpha)
