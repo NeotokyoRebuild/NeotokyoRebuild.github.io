@@ -1,11 +1,11 @@
 title: Alpha v14.0 Release Note
 summary: Release note for Neotokyo; Rebuild Alpha v14.0
-author: kinoko
+author(s): kinoko, brysondev
 
 # Alpha v14.0 Release Note
-2025-03-16 kinoko
+2025-03-16 kinoko, brysondev
 
-* [Download v14.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v14.0-alpha)
+* [Download v14.1-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v14.1-alpha)
 * [Install NT;RE (client)](/guide/install/)
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
 
@@ -33,12 +33,13 @@ author: kinoko
 
 * Convar naming has been made more consistent
 * Added a command to disable sprays server-side `sv_neo_spraydisable`
+* Added a command to disable sprays client-side `cl_spraydisable`
 * Fixes to sprays
 * Added keybind hints for the tutorial
 * Changed map prefix for the tutorial
 * Pre-round freeze time flavor text does not show up anymore for spectators
 
-## Infrastructure
+## Documentation & Automation
 
 * Updated server instructions
 * Updated issue template 
