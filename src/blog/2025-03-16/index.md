@@ -34,7 +34,7 @@ author(s): kinoko, brysondev
 * Convar naming has been made more consistent
 * Added a command to disable sprays server-side `sv_neo_spraydisable`
 * Added a command to disable sprays client-side `cl_spraydisable`
-* Fixes to sprays
+* **KNOWN ISSUE:** Sprays do not currently work serverside, but can be seen locally
 * Added keybind hints for the tutorial
 * Changed map prefix for the tutorial
 * Pre-round freeze time flavor text does not show up anymore for spectators
