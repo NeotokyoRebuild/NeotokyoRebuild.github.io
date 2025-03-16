@@ -15,3 +15,21 @@ a:hover, a:active {
   color: #CCCCFF;
 }
 
+span#social {
+  display: inline;
+  float: right;
+}
+
+span#social-mobile {
+  display: none;
+}
+
+@media(max-width: 500px) {
+  span#social {
+    display: none;
+  }
+  span#social-mobile {
+    display: inline;
+  }
+}
+
