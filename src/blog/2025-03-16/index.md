@@ -1,9 +1,9 @@
 title: Alpha v14.1 Release Note
-summary: Release note for Neotokyo; Rebuild Alpha v14.0
+summary: Release note for Neotokyo; Rebuild Alpha v14.1
 author(s): kinoko, brysondev
 
 # Alpha v14.1 Release Note
-2025-03-16 kinoko, brysondev
+2025-03-11 kinoko, brysondev
 
 * [Download v14.1-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v14.1-alpha)
 * [Install NT;RE (client)](/guide/install/)
