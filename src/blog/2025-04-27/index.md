@@ -1,11 +1,11 @@
-title: Alpha v15 Release Note
-summary: Release note for Neotokyo; Rebuild Alpha v15
+title: Alpha v15.0 Release Note
+summary: Release note for Neotokyo; Rebuild Alpha v15.0
 author(s): kinoko
 
 # Alpha v15.0 Release Note
 2025-04-27 kinoko
 
-* [Download v15-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v15-alpha)
+* [Download v15.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v15-alpha)
 
 * [Install NT;RE (client)](/guide/install/)
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
