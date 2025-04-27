@@ -66,16 +66,6 @@ standard setups. However if you have issues...
 
 ## Troubleshooting
 
-### Cannot mount original NEOTOKYO assets
-
-This could happen if you have NEOTOKYO/Steam installed at a non-default 
-location. Open up "Properties..." then launch options and set to your 
-custom install path:
-
-```
--neopath "C:\PATH\TO\YOUR\NEOTOKYO\NeotokyoSource\"
-```
-
 ### Cannot join VAC servers
 
 The client loads up in insecure mode by default, which will get blocked by
@@ -109,31 +99,4 @@ then click "Run". This will popup everytime NT;RE is started through Steam.
 [Double check the contents](#installing-ntre) of your installation folder, you probably did not extract folders/files properly or are missing some all together. Make sure you have downloaded the necessary libraries and resource files from the "Assets" section of the latest release. Down below is an image of how your installation folder should look like:
 
 ![Picture of the installation folder](folderstructure.png)
-
-### Linux - engine.so: cannot enable executable stack as shared object requires: Invalid argument
-
-Since [glibc 2.41, Source SDK 2013's `engine.so` will fail to load](https://github.com/ValveSoftware/portal2/issues/451)
-causing the game to not start. To workaround this, go to the Source SDK 2013 Multiplayer's bin directory:
-
-```
-~/.steam/steam/steamapps/common/Source SDK Base 2013 Multiplayer/bin
-```
-
-Then make a backup of `engine.so` and use either:
-
-[patchelf](https://github.com/NixOS/patchelf):
-
-```
-$ cp engine.so engine.so.bak
-$ patchelf --clear-execstack engine.so
-```
-
-Or [execstack](https://linux.die.net/man/8/execstack):
-
-```
-$ cp engine.so engine.so.bak
-$ execstack -c engine.so
-```
-
-NT;RE should be able to load up normally afterward.
 
