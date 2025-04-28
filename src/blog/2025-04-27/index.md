@@ -35,14 +35,14 @@ author(s): kinoko
 * Fixes to projected textures
 * Fixed nullptr dereference causing crash on environmental deaths
 * Steam networking is now disabled by default
-* Added func_detail_blocker support
-* Added a countdown stage before the match starts if neo_sv_comp is enabled
+* Added func\_detail\_blocker support
+* Added a countdown stage before the match starts if neo\_sv\_comp is enabled
 * Changed the short pause duration to 1 minute
-* Pauses are now automatically enabled if neo_sv_comp is enabled
+* Pauses are now automatically enabled if neo\_sv\_comp is enabled
 * Added bot-only warmup skip logic
 * Improvements to rain
 * Added a option to loop env_muzzleflash
-* Added an OnCompetitive output to neo_game_config
+* Added an OnCompetitive output to neo\_game\_config
 * Made the tutorial more helpful
 
 ## Documentation & Automation
