@@ -6,7 +6,6 @@ author(s): kinoko
 2025-04-27 kinoko
 
 * [Download v15.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v15-alpha)
-
 * [Install NT;RE (client)](/guide/install/)
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
 
