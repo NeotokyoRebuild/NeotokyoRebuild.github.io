@@ -11,6 +11,8 @@ BLOG_DATES := _metadata/blog_dates
 DSTS_HTML := $(SRCS:$(SRC_DIR)/%.md=$(DST_DIR)/%.html)
 DSTS_HTML_CPY := $(SRCS_CPY:$(SRC_DIR)/%=$(DST_DIR)/%)
 
+FEEDS_LIMIT := 5
+
 all: html
 
 startup:
@@ -76,7 +78,7 @@ $(DST_DIR)/atom.xml: $(SRC_DIR)/blog/*/*.md
 	@echo "<author><name>$(SITE_TITLE)</name></author>" >> $@
 	@echo "<link rel=\"alternate\" type=\"text/html\" href=\"$(SITE_HTTPS_URL)\"/>" >> $@
 	@echo "<link rel=\"self\" type=\"application/atom+xml\" href=\"$(SITE_HTTPS_URL)atom.xml\"/>" >> $@
-	@cat $(BLOG_LIST_FILE) | while read line; do \
+	@cat $(BLOG_LIST_FILE) | head -n$(FEEDS_LIMIT) | while read line; do \
 		entry_date=$$(echo "$$line" | cut -f1); \
 		title=$$(echo "$$line" | cut -f2); \
 		entry_url=$$(echo "$(SITE_HTTPS_URL)blog/$$entry_date/"); \
@@ -97,7 +99,7 @@ $(DST_DIR)/atom.xml: $(SRC_DIR)/blog/*/*.md
 news_txt:
 	@echo "_out/news.txt"
 	@cat $(BLOG_LIST_FILE) | cut -f1 > $(BLOG_DATES)
-	@paste $(BLOG_DATES) $(BLOG_LIST_FILE) | sed -e 's/^/\/blog\//' > "$(DST_DIR)/news.txt"
+	@paste $(BLOG_DATES) $(BLOG_LIST_FILE) | sed -e 's/^/\/blog\//' | head -n$(FEEDS_LIMIT) > "$(DST_DIR)/news.txt"
 
 html: startup $(DSTS_HTML) $(DSTS_HTML_CPY) $(DST_DIR)/index.html $(DST_DIR)/atom.xml news_txt
 
