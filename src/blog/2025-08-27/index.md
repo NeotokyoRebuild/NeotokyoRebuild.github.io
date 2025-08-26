@@ -4,20 +4,20 @@ author(s): nullsystem
 
 
 # Alpha v18.0 Release Note - NextBot bots, various improvements and fixes
-2025-08-26 nullsystem
+2025-08-27 nullsystem
 
 * [Download v18.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v18.0-alpha)
 * [Install NT;RE (client)](/guide/install/)
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
 
 ## NextBot bots
-[NextBot](https://developer.valvesoftware.com/wiki/NextBot) bots is now ported over to NT;RE! 
+[NextBot](https://developer.valvesoftware.com/wiki/NextBot) bots are now ported over to NT;RE! 
 They are fairly basic now just going towards the ghost in CTG mode, but otherwise
 more playable to play against than the old bots.
-There are also additional features for the bots that been added in since the initial port:
+There are also additional features for the bots that have been added on top of the initial port:
 
 * Thermoptic and combat behaviors
-* Smoke blocks bots line of sight
+* Smoke blocks bots' line of sight
 * Running/sprinting
 * Aim when shooting
 * Automatic lean
@@ -26,12 +26,12 @@ There are also additional features for the bots that been added in since the ini
 
 ## Gameplay changes/fixes
 * Silent walking
-* Crosshair is now networked 
+* Crosshair is now networked, you can see other players' crosshair
 * Improve handling of player sprays:
     * Allow sprays during freezetime
     * Prevent spray impulse if the client disabled sprays
     * Delete custom downloaded sprays on both startup and shutdown
-* Ghost boundary - Brush entity to prevent the ghost from being unplayable, will teleport back to when the player was last touching the ground
+* Ghost boundary - Brush entity to prevent the ghost from being unplayable, will teleport back where the player was last touching the ground
 * Changed `mp_forcecamera` default value to 0
 * Revert `MAX_PLAYERS` define from 101 to 33
 * Change `mp_mapcycle_empty_timeout_seconds` from 0 to 1800 seconds (30 minutes)
@@ -46,9 +46,9 @@ There are also additional features for the bots that been added in since the ini
 
 ## HUD changes
 * HUD elements ignore texture size
-* New killer damage HUD, replacing the menu
+* New killer damage HUD, replacing the previous text-only menu
 * Linux - Fixed kill feed font
-* Don't draw smoke fog overlay when using xray
+* Don't draw smoke fog overlay when using spectator xray
 
 ## Main menu UI changes
 * NeoUI - Added clipboard, selection, and free mouse cursor
@@ -78,7 +78,7 @@ There are also additional features for the bots that been added in since the ini
 
 ## Mapping
 * Add `neo_type_converter` entity, lets you convert between parameter types
-* `ent_fire player refillammo` to refil a player's clip for mapping/debugging purpose
+* `ent_fire player refillammo` to refill a player's clip for mapping/debugging purposes
 
 ## Documentation
 * Fixed incorrect container paths in README documentation
