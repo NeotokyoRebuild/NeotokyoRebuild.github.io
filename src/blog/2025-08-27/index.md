@@ -13,7 +13,7 @@ author(s): nullsystem
 ## NextBot bots
 [NextBot](https://developer.valvesoftware.com/wiki/NextBot) bots are now ported over to NT;RE! 
 They are fairly basic now just going towards the ghost in CTG mode, but otherwise
-more playable to play against than the old bots.
+better to play against than the old bots.
 There are also additional features for the bots that have been added on top of the initial port:
 
 * Thermoptic and combat behaviors
@@ -42,7 +42,7 @@ There are also additional features for the bots that have been added on top of t
 * Fix random objects being hot in thermal vision
 * Muzzle flash fixes/changes
 * Supa reload while sprinting
-* Fix weapon drop appearing pitch black
+* Fix weapons dropped appearing pitch black
 
 ## HUD changes
 * HUD elements ignore texture size
@@ -72,7 +72,7 @@ There are also additional features for the bots that have been added on top of t
 * Source code cleanups
 * Keybind support for `neo_message`
 * Fix missing sounds the console warns about
-* Fix leech sounds playing when it shouldn't
+* Fix leech sounds playing when they shouldn't
 * Fix ammo UI buffer overrun which was causing a crash
 * Show hints available in settings menu
 
