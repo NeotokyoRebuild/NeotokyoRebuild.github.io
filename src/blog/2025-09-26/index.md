@@ -11,13 +11,13 @@ author(s): nullsystem
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
 
 ## JGR Gamemode
-Team-based gamemode where you take control of the mech (giant robot) as long as possible per round to win.
-The team(s) without the mech will respawn, with the mech will not respawn.
+Team-based gamemode where you take control of the Juggernaut (robot) as long as possible per round to win.
+The team(s) without the Juggernaut will respawn, with the mech will not respawn.
 
-At the start of each round, a mech will spawn in and like the ghost will be visible in the HUD, once someone
-is inside the mech, it will not showup in the HUD.
-When you're by the mech, hold use to enter inside then when inside just try to stay alive as long as
-possible inside to rack up points. The mech is equipped with a big machine gun and is much
+At the start of each round, the Juggernaut will spawn in and like the ghost will be visible in the HUD, once someone
+is controlling the Juggernaut, it will not show up in the HUD.
+When you're by the Juggernaut, hold use to take control then when inside try to stay alive for as long as
+possible to rack up points. The Juggernaut is equipped with a big machine gun and is much
 larger than a player.
 
 ## Player pings
