@@ -68,8 +68,8 @@ There is now a ping feature to point to an area/specific place to notify other t
 * Fix muzzle flash appearing when scoped
 * Parity SetTeam input for players
 
-## Mapping
-* Soundscapes for `nt_terminal_ctg`
+## Maps
+* Added `ntre_terminal_jgr`
 
 ## Developer works
 * Refactor loadout source code and rearrange headers
