@@ -39,8 +39,8 @@ author(s): kinoko
 * Activators can now be used with neo_npc_targetsystem outputs
 * Refactored the neo_game_config file
 
-
 ## General fixes/changes
 * Added a server variable for automatic clientside demo recording 
 * Fixed a case where a debug assert at client frame draw would fail before a weapon's dead owner was cleared from the weapon at the following tick
 * Fed all the TGRs
+
