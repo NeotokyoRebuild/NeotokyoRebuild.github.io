@@ -6,7 +6,7 @@ author(s): kinoko
 # Alpha v20 Release Note - The big 2-O update
 2025-10-26 kinoko
 
-* [Download v20.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v20-alpha)
+* [Download v20.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v20.0-alpha)
 * [Install NT;RE (client)](/guide/install/)
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
 
@@ -43,4 +43,5 @@ author(s): kinoko
 * Added a server variable for automatic clientside demo recording 
 * Fixed a case where a debug assert at client frame draw would fail before a weapon's dead owner was cleared from the weapon at the following tick
 * Fed all the TGRs
+
 
