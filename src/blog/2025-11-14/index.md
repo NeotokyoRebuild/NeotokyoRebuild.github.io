@@ -11,7 +11,7 @@ author(s): kinoko
 * [GitHub Issues (Bug reports and feature requests)](https://github.com/NeotokyoRebuild/neo/issues)
 
 ## Gameplay fixes/changes
-* Bullets no longer penetrate through players - this should make the TTK feel closer to OGNT
+* Bullets no longer penetrate through players, dealing multiple hits - this should make the TTK feel closer to OGNT
 * Server no longer crashes when a player captures the ghost at match point 
 * Spectators can no longer see the ghost beacons before the person they're spectating does
 * Fixed the max distance of the ghost beacon
@@ -27,6 +27,19 @@ author(s): kinoko
 * Players no longer have noodle arms when throwing weapons
 * Fixes to loadout related issues
 
+## Map changes
+ * Recompiled all background maps with the latest tools
+ * Added the env_wind entity to Marketa and Shrine 
+ * Enabled 3D skybox in water reflections on all maps
+ * Various changes to Rogue:
+	 * Added ghost clips to a few areas
+	 * Opened up the handrail on Skybridge to allow recons to climb up
+	 * Fixed a bad shadow in Small Warehouse
+	 * Fixed a decal
+	 * Changed some boxes to prop_static 
+	 * Raised the LOS blockers on the fence at Trees
+	 * Adjusted grate at Frame so it can be shot through properly
+  
 ## HUD changes
 * Added a unique friendly marker for the JGR and VIP
 
@@ -37,6 +50,7 @@ author(s): kinoko
 
 ## Mapping related fixes/changes
 * Skybox now reflects in the water (requires water detail to be set to "Reflect All")
+* Certain props now react to wind
 
 ## General fixes/changes
 * Added class variable support for gamedata generation
@@ -45,4 +59,5 @@ author(s): kinoko
 * Game can no longer be launched if the DirectX level is set to lower than 9.0
 * Fix for "Unable to remove user_custom files"
 * Fed some of the TGRs
+
 
