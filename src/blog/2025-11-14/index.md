@@ -3,7 +3,7 @@ summary: Release notes for Neotokyo; Rebuild Alpha v21.0
 author(s): kinoko
 
 
-# Alpha v21 Release Note - The big 2-O update
+# Alpha v21 Release Note
 2025-11-14 kinoko
 
 * [Download v21.0-alpha build](https://github.com/NeotokyoRebuild/neo/releases/tag/v21.0-alpha)
@@ -45,3 +45,4 @@ author(s): kinoko
 * Game can no longer be launched if the DirectX level is set to lower than 9.0
 * Fix for "Unable to remove user_custom files"
 * Fed some of the TGRs
+
