@@ -1,7 +1,7 @@
 title: Home
 
-# Neotokyo; Rebuild
-Neotokyo; Rebuild is a work in progress Source SDK 2013 mod of
+# NEOTOKYO;REBUILD
+NEOTOKYO;REBUILD is a work in progress Source SDK 2013 mod of
 [NEOTOKYO°](https://store.steampowered.com/app/244630/NEOTOKYO/).
 Builds available for Windows and Linux are hosted on GitHub.
 

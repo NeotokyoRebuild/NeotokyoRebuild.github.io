@@ -1,5 +1,5 @@
 SITE_HTTPS_URL := https://neotokyorebuild.github.io/
-SITE_TITLE := Neotokyo; Rebuild
+SITE_TITLE := NEOTOKYO;REBUILD
 
 SRC_DIR := src
 DST_DIR := _out
