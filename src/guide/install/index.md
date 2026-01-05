@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2025-03-06
+Last Updated: 2026-01-05
 
 ## Operating System Requirement
 
@@ -25,7 +25,7 @@ Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID
 
 ## Downloading NT;RE
 
-Click on the following links to download the zip files:
+Click on the following links to download the archive files:
 
 <div id="downloading-ntre-div">
     <noscript>
@@ -39,9 +39,9 @@ Click on the following links to download the zip files:
 </div>
 
 For other versions, go to the [GitHub release](https://github.com/NeotokyoRebuild/neo/releases/) page and find the
-version you want and expand the "Assets" section. You only need to install a zip file that ends with
-`resources.zip` and for Windows: `libraries-Windows-Release.zip` or Linux: `libraries-Linux-Release.zip` for
-the binaries zip file themselves. Usually those three zip files will be located at the bottom of the list above
+version you want and expand the "Assets" section. You only need to install the archive that ends with
+`resources` and for Windows: `libraries-Windows-Release` or Linux: `libraries-Linux-Release` for
+the binaries files themselves. Usually those three archive files will be located at the bottom of the list above
 the source code. The rest can be ignored as they're for developers or server operators.
 
 ## Installing NT;RE
@@ -52,10 +52,10 @@ Locate the `sourcemods` directory. Assuming the default installation paths
 * Windows: `C:\Program Files (x86)\Steam\steamapps\sourcemods`
 * Linux: `$HOME/.steam/steam/steamapps/sourcemods`
 
-Extract `...-resources.zip` first, there should be a directory called `neo`
+Extract `...-resources` archive first; there should be a directory called `neo`
 in the `sourcemods` directory now along with NT;RE's specific assets.
 
-Then `...-libraries-[Windows/Linux]-Release.zip` from the location of the
+Then `...-libraries-[Windows/Linux]-Release` from the location of the
 `sourcemods` directory. This should extract the binaries in `neo/bin`.
 
 ## Loading NT;RE
