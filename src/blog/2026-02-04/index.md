@@ -1,5 +1,5 @@
 
-title: Alpha v21.1 > Alpha v24.0 - Release Notes
+title: Alpha v21.1 to Alpha v24.0 - Release Notes
 summary: Release notes from Neotokyo; Rebuild Alpha v21.1 to Alpha v24.0
 author(s): kinoko
 
@@ -111,6 +111,7 @@ Added new server side commands for controlling XP rewards in the CTG gamemode:
 * Fixed compiler warnings
 * Optimize CollectPlayers memory allocation
 * Restocked the vending machines on Bullet
+
 
 
 
