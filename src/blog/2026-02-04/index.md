@@ -44,7 +44,9 @@ We have been so busy working on the game that we have forgotten to post update n
 * Replaced `neo_aim_hold` with proper keybinds
 
 ## Gamemode fixes/changes/additions
+
 Various changes to the JGR gamemode:
+
 * Points are now scored by getting kills as the JGR instead of surviving as the JGR
 * JGR is locked for all players for 20 seconds after the round has started
 * Instead of spawning the instant the JGR dies, the dead team will spawn after an 8 second cooldown
@@ -53,7 +55,9 @@ Various changes to the JGR gamemode:
 * Unmanned JGR is now solid, with soft-collide post-death transitions
 * Player XP is now reduced only down to 10 XP instead of 0
 
+
 Added new server side commands for controlling XP rewards in the CTG gamemode:
+
 * `sv_neo_cap_reward` - How much XP to reward for capturing the ghost. 0 = Rank up. (Default: 0)  
 * `sv_neo_cap_reward_dead` - Whether dead players should receive the ghost capture reward. (Default: 0)  
 * `sv_neo_survivor_bonus` - Whether surviving players on the winning team should receive extra XP. (Default: 1)  
