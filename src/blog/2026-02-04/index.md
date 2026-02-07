@@ -54,10 +54,10 @@ Various changes to the JGR gamemode:
 * Player XP is now reduced only down to 10 XP instead of 0
 
 Added new server side commands for controlling XP rewards in the CTG gamemode:
-`sv_neo_cap_reward` - How much XP to reward for capturing the ghost. 0 = Rank up. (Default: 0)  
-`sv_neo_cap_reward_dead` - Whether dead players should receive the ghost capture reward. (Default: 0)  
-`sv_neo_survivor_bonus` - Whether surviving players on the winning team should receive extra XP. (Default: 1)  
-`sv_neo_ghost_carrier_bonus` - Whether the ghost carrier on the winning team should receive extra XP. (Default: 1)
+* `sv_neo_cap_reward` - How much XP to reward for capturing the ghost. 0 = Rank up. (Default: 0)  
+* `sv_neo_cap_reward_dead` - Whether dead players should receive the ghost capture reward. (Default: 0)  
+* `sv_neo_survivor_bonus` - Whether surviving players on the winning team should receive extra XP. (Default: 1)  
+* `sv_neo_ghost_carrier_bonus` - Whether the ghost carrier on the winning team should receive extra XP. (Default: 1)
 
 ## Bot related fixes/changes/additions
 * Bots will now evade from enemy grenades 
@@ -110,6 +110,7 @@ Added new server side commands for controlling XP rewards in the CTG gamemode:
 * Fixed compiler warnings
 * Optimize CollectPlayers memory allocation
 * Restocked the vending machines on Bullet
+
 
 
 
