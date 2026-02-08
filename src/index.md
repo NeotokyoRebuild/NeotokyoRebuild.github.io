@@ -12,14 +12,7 @@ Builds available for Windows and Linux are hosted on GitHub.
 ## Downloading NT;RE
 
 <div id="downloading-ntre-div">
-    <noscript>
-        <p>Sorry, Javascript is required to generate the download links.</p>
-        <p>
-            If you don't want to enable Javascript, see the download links manually from:
-            <a href="https://github.com/NeotokyoRebuild/neo/releases">https://github.com/NeotokyoRebuild/neo/releases</a>
-        </p>
-    </noscript>
-    <script type="text/javascript" src="/releases.js"></script>
+GH_LATEST_HTML
 </div>
 
 ## Blog
