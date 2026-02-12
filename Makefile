@@ -4,12 +4,16 @@ SITE_TITLE := NEOTOKYO;REBUILD
 SRC_DIR := src
 DST_DIR := _out
 SRCS := $(shell find $(SRC_DIR) -name '*.md' | grep -vxF "src/index.md")
-SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico $(shell find $(SRC_DIR) -name '*.png') $(SRC_DIR)/releases.js
+SRCS_CPY := $(SRC_DIR)/style.css $(SRC_DIR)/favicon.ico $(shell find $(SRC_DIR) -name '*.png')
 
 BLOG_LIST_FILE := _metadata/blog_list
 BLOG_DATES := _metadata/blog_dates
 DSTS_HTML := $(SRCS:$(SRC_DIR)/%.md=$(DST_DIR)/%.html)
 DSTS_HTML_CPY := $(SRCS_CPY:$(SRC_DIR)/%=$(DST_DIR)/%)
+
+GH_RELEASE_URL := https://api.github.com/repos/NeotokyoRebuild/neo/releases/latest
+GH_RELEASE_JSON := _metadata/gh_latest.json
+GH_RELEASE_HTML := _metadata/gh_latest.html
 
 FEEDS_LIMIT := 5
 
@@ -26,12 +30,35 @@ clean:
 serve:
 	python3 -m http.server -d $(DST_DIR)
 
+fetch_release: startup
+	@if [ ! -f $(GH_RELEASE_JSON) ]; then \
+		curl -Lo $(GH_RELEASE_JSON) $(GH_RELEASE_URL); \
+		fi
+	@echo html: $(GH_RELEASE_HTML)
+	@echo "<p>" > $(GH_RELEASE_HTML)
+	@printf "Current release: %s<br>\n" "$$(jq -r .tag_name < $(GH_RELEASE_JSON))" >> $(GH_RELEASE_HTML)
+	@printf "Published on: %s\n" "$$(jq -r .published_at < $(GH_RELEASE_JSON) | cut -d'T' -f1)" >> $(GH_RELEASE_HTML)
+	@echo "</p><p>" >> $(GH_RELEASE_HTML)
+	@{ 	printf "Linux-only binaries\tlibraries-Linux-Release\n"; \
+		printf "Windows-only binaries\tlibraries-Windows-Release\n"; \
+		printf "Windows and Linux resources\tresources\n"; \
+	} | while read line; do \
+		json_filter="$$(echo "$$line" | cut -f2)"; \
+		printf "%s: <a href=\"%s\">%s</a><br>\n" \
+			"$$(echo "$$line" | cut -f1)" \
+			"$$(jq -r '.assets[] | select(.name | contains("'"$$json_filter"'")) | .browser_download_url' < $(GH_RELEASE_JSON))" \
+			"$$(jq -r '.assets[] | select(.name | contains("'"$$json_filter"'")) | .name' < $(GH_RELEASE_JSON))" \
+			>> $(GH_RELEASE_HTML); \
+		done
+	@echo "</p>" >> $(GH_RELEASE_HTML)
+
 $(DST_DIR)/%.html: $(SRC_DIR)/%.md $(SRC_DIR)/_header.html $(SRC_DIR)/_footer.html
 	@echo html: $@
 	@mkdir -p $(dir $@)
 	@SSG_TITLE=$$(lowdown -X title $<); \
 		m4 -DSSG_TITLE="$$SSG_TITLE" $(SRC_DIR)/_header.html > $@.header.html.tmp
-	@lowdown -Thtml --html-no-skiphtml --html-no-escapehtml -o $@.tmp $< 
+	@sed -e '/GH_LATEST_HTML/e cat $(GH_RELEASE_HTML)' -e 's/GH_LATEST_HTML//g' $< | \
+		lowdown -Thtml --html-no-skiphtml --html-no-escapehtml -o $@.tmp -
 	@cat $@.header.html.tmp $@.tmp $(SRC_DIR)/_footer.html > $@
 	@rm $@.tmp $@.header.html.tmp
 	@case $< in $(SRC_DIR)/blog/*) \
@@ -57,7 +84,8 @@ $(DST_DIR)/index.html: $(SRC_DIR)/blog/*/*.md $(SRC_DIR)/_header.html $(SRC_DIR)
 	@cat $(BLOG_LIST_FILE).tmp | sort -ur > $(BLOG_LIST_FILE)
 	@rm $(BLOG_LIST_FILE).tmp
 	@m4 -DSSG_TITLE="Home" $(SRC_DIR)/_header.html > $@.header.html.tmp
-	@lowdown -Thtml --html-no-skiphtml --html-no-escapehtml -o $@.tmp < $(SRC_DIR)/index.md
+	@sed -e '/GH_LATEST_HTML/e cat $(GH_RELEASE_HTML)' -e 's/GH_LATEST_HTML//g' $(SRC_DIR)/index.md | \
+		lowdown -Thtml --html-no-skiphtml --html-no-escapehtml -o $@.tmp -
 	@echo "<ul>" >> $@.mid
 	@cat $(BLOG_LIST_FILE) | while read line; do \
 		entry_date=$$(echo "$$line" | cut -f1); \
@@ -101,7 +129,7 @@ news_txt:
 	@cat $(BLOG_LIST_FILE) | cut -f1 > $(BLOG_DATES)
 	@paste $(BLOG_DATES) $(BLOG_LIST_FILE) | sed -e 's/^/\/blog\//' | head -n$(FEEDS_LIMIT) > "$(DST_DIR)/news.txt"
 
-html: startup $(DSTS_HTML) $(DSTS_HTML_CPY) $(DST_DIR)/index.html $(DST_DIR)/atom.xml news_txt
+html: fetch_release $(DSTS_HTML) $(DSTS_HTML_CPY) $(DST_DIR)/index.html $(DST_DIR)/atom.xml news_txt
 
 .PHONY: all clean html
 

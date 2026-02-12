@@ -28,14 +28,7 @@ Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID
 Click on the following links to download the archive files:
 
 <div id="downloading-ntre-div">
-    <noscript>
-        <p>Sorry, Javascript is required to generate the download links.</p>
-        <p>
-            If you don't want to enable Javascript, see the download links manually from:
-            <a href="https://github.com/NeotokyoRebuild/neo/releases">https://github.com/NeotokyoRebuild/neo/releases</a>
-        </p>
-    </noscript>
-    <script type="text/javascript" src="/releases.js"></script>
+GH_LATEST_HTML
 </div>
 
 For other versions, go to the [GitHub release](https://github.com/NeotokyoRebuild/neo/releases/) page and find the
