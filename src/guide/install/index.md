@@ -1,7 +1,7 @@
 title: Guide - Install NT;RE (Client)
 
 # Guide - Install NT;RE (Client)
-Last Updated: 2026-01-05
+Last Updated: 2026-02-15
 
 ## Operating System Requirement
 
