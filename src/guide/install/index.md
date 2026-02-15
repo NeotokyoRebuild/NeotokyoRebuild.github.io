@@ -15,13 +15,13 @@ is not supported by NT;RE.
 ## Original NEOTOKYO Assets
 
 NT;RE relies on (original) NEOTOKYO's assets to function. On Steam, just
-download and install [NEOTOKYO](steam://rungameid/244630) regardless of Windows
+download and install [NEOTOKYO](steam://install/244630) regardless of Windows
 or on Linux. Later when NT;RE starts up, it will try to find those files
 automatically if possible and mounts them.
 
 ## Source SDK 2013 Multiplayer
 
-Install [Source SDK Base 2013 (MP) Multiplayer](steam://rungameid/243750) (AppID: 243750)
+Install [Source SDK Base 2013 (MP) Multiplayer](steam://install/243750) (AppID: 243750)
 
 ## Downloading NT;RE
 
@@ -74,7 +74,7 @@ launch options and set:
 This is not required, however if you want to make NT;RE run under the
 SteamRT 3.0 runtime:
 
-Ensure ["Steam Linux Runtime 3.0 (sniper)"](steam://rungameid/1628350) is installed, then
+Ensure ["Steam Linux Runtime 3.0 (sniper)"](steam://install/1628350) is installed, then
 set the launch options:
 
 ```
