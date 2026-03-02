@@ -23,7 +23,6 @@ author(s): kinoko, FCC
 * Fixed `neo_restart_this` resetting the gamemode to CTG on non-CTG maps
 
 ## Bot related fixes/changes/additions
-
 * Bots now throw grenades from cover
 * Recon bots now utilize super jump for faster map traversal
 * Bots can now climb ladders
@@ -63,3 +62,4 @@ author(s): kinoko, FCC
 * Fixed screen size change breaking brightness
 * Reduced various console spam
 * Inspected the elevator shaft and the out of order elevator on Rise
+
