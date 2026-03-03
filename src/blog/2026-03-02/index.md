@@ -12,7 +12,6 @@ author(s): kinoko, FCC
 
 ## Gameplay fixes/changes/additions
 * Changes to vision mode shaders to bring them closer to parity
-* Fixed viewmodels not disappearing when scoped 
 * Fixed projectiles getting stuck to geometry
 * Fixed snipers not going invisible when a spectate target zoomed in
 * Fixed the player camera leaning when observing in third person
@@ -62,4 +61,5 @@ author(s): kinoko, FCC
 * Fixed screen size change breaking brightness
 * Reduced various console spam
 * Inspected the elevator shaft and the out of order elevator on Rise
+
 
