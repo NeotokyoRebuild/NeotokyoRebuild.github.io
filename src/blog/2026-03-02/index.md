@@ -28,7 +28,7 @@ author(s): kinoko, FCC
 * Bots now use smokes as concealment when retreating from threats without thermal vision
 * Bots now actively investigate gunfire sounds during search behaviors
 * Bot can now always see the ghost carrier, regardless of cloak state
-* Bots now follow the NAV_MESH_CROUCH attribute in map nav meshes
+* Bots now follow the `NAV_MESH_CROUCH` attribute in map nav meshes
 * Fixed bot CTG navigation stuttering that occurred during breakaway runs
 * Server skips automatically adding bots if a map has no navmesh
 * Updates to bot pathing to discourage moving through deadly hazard areas
@@ -41,8 +41,8 @@ author(s): kinoko, FCC
 * Known issue: Bot followers can sometimes crowded too close for this behavior, so place a waypoint ping to move followers to an optimal throwing distance.
  
  ## Map fixes/changes/additions
- * Fixed navmesh paths in Oilstain and Dawn/Dusk
- * Reduced the generation step size of `nav_generate` to create more precise nav area connections
+* Fixed navmesh paths in Oilstain and Dawn/Dusk
+* Reduced the generation step size of `nav_generate` to create more precise nav area connections
  
 ## HUD fixes/changes/additions
 * Added a medium verbosity option to the extended killfeed (displays kills and objective captures) - enabled by default
@@ -61,5 +61,6 @@ author(s): kinoko, FCC
 * Fixed screen size change breaking brightness
 * Reduced various console spam
 * Inspected the elevator shaft and the out of order elevator on Rise
+
 
 
