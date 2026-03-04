@@ -40,7 +40,7 @@ author(s): kinoko, FCC
 * Requires enabling the bot commanding feature with ConVar `sv_neo_bot_cmdr_enable 1`, and pressing use on friendly bots to collect them as followers
 * Known issue: Bot followers can sometimes crowded too close for this behavior, so place a waypoint ping to move followers to an optimal throwing distance.
  
- ## Map fixes/changes/additions
+## Map fixes/changes/additions
 * Fixed navmesh paths in Oilstain and Dawn/Dusk
 * Reduced the generation step size of `nav_generate` to create more precise nav area connections
  
