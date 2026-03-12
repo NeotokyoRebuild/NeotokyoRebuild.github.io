@@ -14,7 +14,7 @@ author(s): kinoko
 * Changes to cloak to bring it closer to parity
 * Fixed sometimes being able to see ghost beacons during death animation
 * Fixed the player being able to stay scoped while the SRS bolt racking animation was playing
-* Rounds not tie when all players die on the last tick
+* Rounds now tie when all players die on the last tick
 * Rework to BALC3:
  *  Added ADS to the gun
  *  Added impact grenade alt fire mode, which can bounce off walls
@@ -57,4 +57,5 @@ author(s): kinoko
 * Added a new sound effect when pressing +use, replacing the default HL2 sound effect
 * Fixed vision modes not displaying properly when spectating a match through SourceTV
 * Gave the TGRs a good brushing
+
 
