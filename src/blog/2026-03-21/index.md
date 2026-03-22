@@ -1,5 +1,5 @@
 title: Alpha v28.3 Release Notes
-summary: Release notes for NEOTOKYO;REBUILD v28.9 and v28.3
+summary: Release notes from NEOTOKYO;REBUILD Alpha v28.2 to Alpha v28.3
 author(s): kinoko
 
 
@@ -18,7 +18,7 @@ author(s): kinoko
 	* When `sv_neo_grenade_show_path` is enabled, all players are be able to see trails which follow a grenade's path. This command requires sv_cheats to be enabled.
 
 ## Mapping related fixes/changes/additions
-* Fixed env_sun being hidden when under the centre of view
+* Fixed env_sun being hidden when under the center of view
  
 ## HUD fixes/changes/additions
 * Fixed texture sizes not updating immediately when changing the values for `cl_neo_squad_hud_avatar_size`
