@@ -71,7 +71,18 @@ launch options and set:
 -steam
 ```
 
-### 4b. Linux - Force SteamRT 3.0
+### 4b. Linux - Jitte audio and some fonts failing to load properly
+
+Fonts and sounds with non-lowercase filepaths have been broken since
+the TF2-SDK/64-bit update on Linux, affecting the NEUROPOL2 and X-SCALE
+fonts, and jitte sounds. To fix this, go to your NEOTOKYO installation
+folder and copy then rename the following to lowercase variant:
+
+* `NeotokyoSource/resource/NEUROPOL2.ttf` to `NeotokyoSource/resource/neuropol2.ttf`
+* `NeotokyoSource/resource/X-SCALE_.TTF` to `NeotokyoSource/resource/x-scale_.ttf`
+* `NeotokyoSource/sound/weapons/Jitte/` to `NeotokyoSource/sound/weapons/jitte/`
+
+### 4c. Linux - Force SteamRT 3.0
 
 This is not required, however if you want to make NT;RE run under the
 SteamRT 3.0 runtime:
@@ -87,7 +98,7 @@ When NT;RE is launched, a Window with options should popup. On the top
 "Container runtime" option change from "None" to "sniper 0.YYYYMMDD.VERSION"
 then click "Run". This will popup everytime NT;RE is started through Steam.
 
-### 4c. Could not load library client. Try restarting. If that doesn't work, verify the cache.
+### 4d. Could not load library client. Try restarting. If that doesn't work, verify the cache.
 
 #### Windows
 
