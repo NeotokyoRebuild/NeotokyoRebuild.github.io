@@ -22,7 +22,7 @@ author(s): kinoko
  
 ## HUD fixes/changes/additions
 * Fixed texture sizes not updating immediately when changing the values for `cl_neo_squad_hud_avatar_size`
-	* Same fix also applies for `cl_neo_hud_centre_size`, `cl_neo_hud_center_ghost_cap_size`, and `cl_neo_hud_center_ghost_marker_size` 
+	* Same fix also applies for `cl_neo_hud_centre_size`, `cl_neo_hud_centre_ghost_cap_size`, and `cl_neo_hud_centre_ghost_marker_size` 
  
 ## UI fixes/changes/additions
 * Slightly adjusted the UI for spectators
