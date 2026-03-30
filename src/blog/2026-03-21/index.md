@@ -12,10 +12,10 @@ author(s): kinoko
 
 ## Gameplay fixes/changes/additions
  * Fixed penetration related issues
- * Fixed a bug where the server would crash if a player holding the ghost would die near a retreival zone
+ * Fixed a bug where the server would crash if a player holding the ghost would die near a retrieval zone
  * Fixed suicides not giving assists if the player who killed themselves was previously damaged by another player
  * Added new commands `cl_neo_grenade_show_path` and `sv_neo_grenade_show_path`
-	*  When `cl_neo_grenade_show_path` is enabled, spectators will be able to see trails which follow a grenade's path
+	* When `cl_neo_grenade_show_path` is enabled, spectators will be able to see trails which follow a grenade's path
 	* When `sv_neo_grenade_show_path` is enabled, all players are be able to see trails which follow a grenade's path. This command requires sv_cheats to be enabled.
 
 ## Mapping related fixes/changes/additions
@@ -28,10 +28,10 @@ author(s): kinoko
  
 ## UI fixes/changes/additions
 * Slightly adjusted the UI for spectators
-* Fixed the demoui smoother buttons being unreactive
+* Fixed the `demoui` smoother buttons being unreactive
 
 ## General fixes/changes/additions
 * Added a new server convar: `sv_neo_server_autorecord` - when enabled, a SourceTV demo will be recorded from the moment a round starts to when the event game_end is triggered
 * Fixed server-side auto recording causing servers to crash
-* Fixed spec_next/prev not skipping dead players in demos
+* Fixed `spec_next`/`spec_prev` not skipping dead players in demo replays
 * Various changes for a smoother demo watching experience
