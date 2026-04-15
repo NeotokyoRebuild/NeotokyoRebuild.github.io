@@ -74,7 +74,7 @@ standard setups. However if you have issues...
 
 ### The game does not appear in Steam library
 
-Try restarting Steam if you already didn't.
+Try restarting Steam if you haven't already.
 Also double check the `Steam/steamapps/sourcemods/neo` path for correctness.
 
 ### 4a. Cannot join VAC servers
