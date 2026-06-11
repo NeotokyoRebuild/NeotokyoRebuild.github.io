@@ -24,7 +24,7 @@ span#social-mobile {
   display: none;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 700px) {
   span#social {
     display: none;
   }
