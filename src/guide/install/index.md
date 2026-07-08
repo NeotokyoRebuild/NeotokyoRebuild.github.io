@@ -66,7 +66,7 @@ Then `...-libraries-[Windows/Linux]-Release` from the location of the
 
 ## 3. Loading NT;RE
 
-Open (or restart) Steam then "Neotokyo: Rebuild" should popup as an installed
+Open (or restart) Steam then "NEOTOKYO;REBUILD" should pop up as an installed
 game. From here, just startup the game and it could go fine generally for
 standard setups. However if you have issues... 
 
