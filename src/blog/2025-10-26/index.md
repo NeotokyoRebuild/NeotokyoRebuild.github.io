@@ -1,5 +1,5 @@
 title: Alpha v20.0 Release Notes - The big 2-O update
-summary: Release notes for Neotokyo; Rebuild Alpha v20.0
+summary: Release notes for NEOTOKYO;REBUILD Alpha v20.0
 author(s): kinoko
 
 

@@ -1,5 +1,5 @@
 title: Alpha v13.0 Release Note
-summary: Release note for Neotokyo; Rebuild Alpha v13.0
+summary: Release note for NEOTOKYO;REBUILD Alpha v13.0
 author: brysondev
 
 # Alpha v13.0 Release Note
@@ -21,7 +21,7 @@ you come across while trying it out.
 
 ### VScript Support
 
-Neotokyo; Rebuild now has [VScript](https://developer.valvesoftware.com/wiki/VScript) support using the [Squirrel](https://developer.valvesoftware.com/wiki/Squirrel) scripting language.
+NEOTOKYO;REBUILD now has [VScript](https://developer.valvesoftware.com/wiki/VScript) support using the [Squirrel](https://developer.valvesoftware.com/wiki/Squirrel) scripting language.
 
 ## UI changes
 

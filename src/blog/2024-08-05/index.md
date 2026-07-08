@@ -1,5 +1,5 @@
 title: Pre-Alpha v7.0 and 7.1 Release Note
-summary: Release note for Neotokyo; Rebuild Pre-Alpha v7.0 and 7.1
+summary: Release note for NEOTOKYO;REBUILD Pre-Alpha v7.0 and 7.1
 author: nullsystem
 
 # Pre-Alpha v7.0 and 7.1 Release Note

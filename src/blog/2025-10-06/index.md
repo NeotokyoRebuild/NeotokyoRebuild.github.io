@@ -1,5 +1,5 @@
 title: Alpha v19.1 Release Notes - Mini update
-summary: Release notes for Neotokyo; Rebuild Alpha v19.1
+summary: Release notes for NEOTOKYO;REBUILD Alpha v19.1
 author(s): kinoko
 
 

@@ -1,5 +1,5 @@
 title: Alpha v21.0 Release Notes
-summary: Release notes for Neotokyo; Rebuild Alpha v21.0
+summary: Release notes for NEOTOKYO;REBUILD Alpha v21.0
 author(s): kinoko
 
 

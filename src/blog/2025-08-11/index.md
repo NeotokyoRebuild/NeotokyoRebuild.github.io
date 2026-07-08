@@ -1,5 +1,5 @@
 title: Alpha v16.0, v17.0 Release Notes
-summary: Release notes for Neotokyo; Rebuild Alpha v16 and v17
+summary: Release notes for NEOTOKYO;REBUILD Alpha v16 and v17
 author(s): Rain
 
 

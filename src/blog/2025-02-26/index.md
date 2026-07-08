@@ -1,5 +1,5 @@
 title: Pre-Alpha v12.0 Release Note - TF2 SDK update and now 64-bit!
-summary: Release note for Neotokyo; Rebuild Pre-Alpha v12.0
+summary: Release note for NEOTOKYO;REBUILD Pre-Alpha v12.0
 author: nullsystem
 
 # Pre-Alpha v12.0 Release Notes - TF2 SDK update and now 64-bit!

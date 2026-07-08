@@ -1,5 +1,5 @@
 title: Alpha v18.0 Release Notes - NextBot bots, various improvements and fixes
-summary: Release notes for Neotokyo; Rebuild Alpha v18
+summary: Release notes for NEOTOKYO;REBUILD Alpha v18
 author(s): nullsystem
 
 

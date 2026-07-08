@@ -1,5 +1,5 @@
 title: Alpha v21.1 to Alpha v24.0 - Release Notes
-summary: Release notes from Neotokyo; Rebuild Alpha v21.1 to Alpha v24.0
+summary: Release notes from NEOTOKYO;REBUILD Alpha v21.1 to Alpha v24.0
 author(s): kinoko
 
 

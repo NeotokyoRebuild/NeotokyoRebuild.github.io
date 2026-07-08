@@ -1,5 +1,5 @@
 title: Alpha v15.0 Release Note
-summary: Release note for Neotokyo; Rebuild Alpha v15.0
+summary: Release note for NEOTOKYO;REBUILD Alpha v15.0
 author(s): kinoko
 
 # Alpha v15.0 Release Note

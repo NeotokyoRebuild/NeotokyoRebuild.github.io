@@ -1,5 +1,5 @@
 title: Alpha v19.0 Release Notes - JGR/Juggernaut Gamemode and various fix/changes
-summary: Release notes for Neotokyo; Rebuild Alpha v19
+summary: Release notes for NEOTOKYO;REBUILD Alpha v19
 author(s): nullsystem
 
 

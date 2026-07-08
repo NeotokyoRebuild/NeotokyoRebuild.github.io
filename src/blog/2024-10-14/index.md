@@ -1,8 +1,8 @@
-title: Neotokyo;Rebuild Development Progress Update
+title: NEOTOKYO;REBUILD Development Progress Update
 summary: Update on project progress over the last couple of months
 author: kinoko and blaberry 
 
-# Neotokyo;Rebuild Development Progress Update
+# NEOTOKYO;REBUILD Development Progress Update
 
 2024-10-14 kinoko and blaberry
 

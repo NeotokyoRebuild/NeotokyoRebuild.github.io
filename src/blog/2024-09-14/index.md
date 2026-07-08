@@ -1,5 +1,5 @@
 title: Pre-Alpha v8.0 Release Note
-summary: Release note for Neotokyo; Rebuild Pre-Alpha v8.0
+summary: Release note for NEOTOKYO;REBUILD Pre-Alpha v8.0
 author: nullsystem
 
 # Pre-Alpha v8.0 Release Note

@@ -1,5 +1,5 @@
 title: Pre-Alpha v10.0 Release Note
-summary: Release note for Neotokyo; Rebuild Pre-Alpha v10.0
+summary: Release note for NEOTOKYO;REBUILD Pre-Alpha v10.0
 author: brysondev
 
 # Pre-Alpha v10.0 Release Note

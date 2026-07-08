@@ -1,5 +1,5 @@
 title: Pre-Alpha v11.0 Release Note
-summary: Release note for Neotokyo; Rebuild Pre-Alpha v11.0
+summary: Release note for NEOTOKYO;REBUILD Pre-Alpha v11.0
 author: kinoko
 
 # Pre-Alpha v11.0 Release Note

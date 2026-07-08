@@ -1,5 +1,5 @@
 title: Alpha v14.1 Release Note
-summary: Release note for Neotokyo; Rebuild Alpha v14.1
+summary: Release note for NEOTOKYO;REBUILD Alpha v14.1
 author(s): kinoko, brysondev
 
 # Alpha v14.1 Release Note
